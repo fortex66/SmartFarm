@@ -1,0 +1,269 @@
+/* style.css 파일 */
+/* 기본 스타일 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* 네비게이션 바 스타일링 */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+/* 로고 스타일 */
+.navbar .logo {
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 60px; /* 로고의 높이 */
+}
+
+/* 메뉴 스타일 */
+.navbar .menu {
+    list-style: none;
+    display: flex; /* 메뉴 항목을 가로로 나열 */
+    padding-left: 0; /* 기본 ul의 패딩 제거 */
+    padding-top: 20px;
+}
+
+.navbar .menu li {
+    padding: 0px 80px; /* 항목 사이 간격 조정 */
+    
+}
+
+.navbar .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 사용자 정보 스타일 */
+.navbar .user-info {
+    color: black;
+    padding-right: 40px;
+    padding-top:20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.navbar .user-info > a{
+    text-decoration: none;
+    color:black;
+}
+
+.imagewrap{
+  position: relative; /* 상대 위치 설정 */
+  background-image: url("");
+  background-size: 1920px 1021px;
+  width : 1920px;
+  height : 1021px;
+
+  display: flex;
+
+}
+
+.imagewrap img {
+  width: 100%;
+
+}
+
+
+
+.main_img_txt{
+  display: flex;
+  flex-direction: column;
+  position: absolute; /* 절대 위치 설정 */
+  color: white;
+}
+
+.main_img_txt span{
+    color: white;
+}
+
+.main_img_txt span:nth-child(1){
+  font-size: 96px;
+  font-family: Karla;
+  font-weight: 400;
+  word-wrap: break-word;
+  padding-left: 1150px;
+  padding-top: 400px;
+}
+
+.main_img_txt span:nth-child(2){
+    font-size: 40px;
+    font-family: Karla;
+    font-weight: 400;
+    word-wrap: break-word;
+    padding-left: 1150px;
+    padding-top: 70px;
+}
+
+.recommended_slide{
+    color: black;
+    font-size: 60px;
+    font-family: Karla;
+    font-weight: 400;
+    word-wrap: break-word;
+    padding-left: 90px;
+    padding-top: 200px;
+}
+
+li{
+    list-style-type: none;
+  }
+
+.slidewrap{
+    width: 1255px;
+    height: 750px;
+    position: absolute;
+    padding-top: 0;
+    left: 25%;
+    top: 1250px;
+    overflow: hidden;
+}
+
+/* 첫 번째 슬라이드 가운데에 정렬하기위해
+첫번째 슬라이드만 margin-left조정 */
+.slides{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 4165px;
+    transition: left 0.5s ease-out;
+}
+
+/* 슬라이드들 옆으로 정렬 */
+.slides li:not(:last-child){
+    float: left;
+    margin-right: 100px;
+  }
+  
+.slides li{
+    float: left;
+  }
+  
+.controller span{
+    position:absolute;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 50%;
+    font-size: 1.3em;
+    cursor: pointer;
+  }
+  
+  /* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+.controller span:hover{
+    background-color: rgba(128, 128, 128, 0.11);
+  }
+  
+.prev{
+    left: 10px;
+  }
+  
+.next{
+    right: 10px;
+  }
+
+.most_ordered_crops{
+    color: black;
+    font-size: 70px;
+    font-family: Karla;
+    font-weight: 400; 
+    position: absolute;
+    top: 2100px;
+    left: 70px;
+    text-align: center;
+  }
+
+.most_ordered_crops .most_ordered_crop_img{
+    left: 0;
+    top: 0;
+    width: 1770px;
+    height: 380px;
+    margin-top: 20px;
+}
+
+.most_ordered_crops .most_ordered_crop_img li:not(:last-child){
+    float: left;
+    margin-right: 30px;
+  }
+
+.most_ordered_crops .most_ordered_crop_img li{
+    float: left;
+    object-fit: fill;
+    overflow: hidden;
+  }
+
+.new_crops{
+    color: black;
+    font-size: 70px;
+    font-family: Karla;
+    font-weight: 400; 
+    position: absolute;
+    top: 2700px;
+    left: 70px;
+    text-align: center;
+  }
+
+.new_crops .new_crop_img{
+    left: 0;
+    top: 0;
+    width: 1770px;
+    height: 380px;
+    margin-top: 20px;
+}
+
+.new_crops .new_crop_img li:not(:last-child){
+    float: left;
+    margin-right: 30px;
+  }
+
+.new_crops .new_crop_img li{
+    float: left;
+    object-fit: fill;
+    overflow: hidden;
+  }
+
+.bottom_bar{
+    width: 1920px;
+    height: 360px;
+    background: #889787;
+    position: absolute;
+    top: 3400px;
+    left: 0px;
+  }
+
+.bottom_bar .logo{
+    position: absolute;
+    top: 80px;
+    left: 100px;
+  }
+
+.bottom_bar .companytxt{
+    position:absolute;
+    top: 120px;
+    left: 500px;
+    color: black;
+    font-size: 20px;
+    font-family: Karla;
+    font-weight: 400;
+    word-wrap: break-word;
+  }

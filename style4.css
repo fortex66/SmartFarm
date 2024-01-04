@@ -1,0 +1,272 @@
+/* style.css 파일 */
+/* 기본 스타일 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* 네비게이션 바 스타일링 */
+.navbar {
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 로고 스타일 */
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    height: 60px; /* 로고의 높이 */
+}
+
+/* 메뉴 스타일 */
+.navbar .menu {
+    list-style: none;
+    display: flex; /* 메뉴 항목을 가로로 나열 */
+    padding-left: 0; /* 기본 ul의 패딩 제거 */
+    padding-top: 20px;
+}
+
+.navbar .menu li {
+    padding: 0px 80px; /* 항목 사이 간격 조정 */
+    
+}
+
+.navbar .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 사용자 정보 스타일 */
+.navbar .user-info {
+    color: #333;
+
+    padding-top:20px;
+}
+
+.navbar .user-info > a{
+    text-decoration: none;
+    color:black;
+  }
+  a{
+    text-decoration: none;
+  }
+
+
+
+
+
+
+
+
+
+/* 제목 스타일 */
+h1 {
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 40px;
+    
+}
+
+/* 주문 컨테이너 스타일 */
+.order-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    position: relative;
+}
+.order-info {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    width: 95%;
+    gap: 50px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    height: 100%; /* 부모인 body의 높이를 상속받기 위해 추가 */
+}
+/* 내용 요소의 높이 지정 */
+.order-info > div {
+    height: 100%; /* 내용 요소의 높이를 100%로 설정 */
+    flex: 1;
+}
+
+
+.order-info img {
+    max-width: 150px;
+    max-height: 130px;
+    margin-top: 20px;
+    margin-bottom:20px;
+}
+
+/* 체크박스 스타일 */
+.order-info input[type="checkbox"] {
+    margin-left: 50px;
+    }
+    
+    .order-info label {
+    /* 체크박스 레이블 스타일 */
+    color: #333;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    margin-right: 10px;
+    }
+
+
+#random.png {
+    margin-right: 50px;
+}
+
+    #cropName {
+        font-size: 16px;
+        text-align: center;
+      }
+      
+    #harvestPeriod {
+        font-style: italic;
+        font-size: 14px;
+        text-align: center;
+      }
+
+/* Button styles */
+/* 카운터 스타일 */
+.counter {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+/* Button styles */
+.counter button {
+    font-size: 32px;
+    font-size: 2.5em;
+    margin: 0 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#decreaseButton {
+    color: gray;
+}
+
+#increaseButton {
+    font-size: 40px;
+}
+
+#quantityButtons {
+    display: flex;
+    align-items: center;
+    flex-direction: row; /* 좌우로 배치하도록 설정 */
+}
+
+#quantityButtons button {
+    margin: 0 5px; /* 좌우 여백 조절 */
+}
+
+/* Price display styles 가격정보 */
+#priceDisplay {
+    font-size: 30px;
+    align-items: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#numberDisplay {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+#priceDisplay {
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+
+
+
+/* 주문 버튼 컨테이너 스타일 */
+.order-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+    position: relative;
+    
+}
+.order-button {
+    background-color: #FE8900;
+    color: black;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    flex-direction: row-reverse; /* 오른쪽으로 정렬 */
+}
+
+
+#totalPrice {
+    position: right; 
+    left: 50px;
+    font-weight: bold; 
+    font-size: 15px;
+
+
+
+}
+
+
+#deleteButton {
+    background-color: #dc3545; /* 삭제 버튼 배경색 */
+    color: #fff; /* 삭제 버튼 텍스트 색상 */
+    padding: 10px 15px; /* 내부 여백 */
+    border: none; /* 테두리 없음 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    cursor: pointer; /* 포인터 모양으로 변경 */
+    margin-right: 50px;
+}
+
+#deleteButton:hover {
+    background-color: #c82333; /* 마우스 오버 시 배경색 변경 */
+
+}

@@ -1,0 +1,45 @@
+/* style.css 파일 */
+/* 기본 스타일 리셋 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+a{
+    text-decoration: none;
+}
+
+
+.farmlist_fromdb > a{
+    text-decoration: none;
+    color:black;
+}
+
+#orderButton {
+    position: absolute;
+    width: 130px;  
+    height: 40px;
+    bottom: 50px;  
+    right: 300px; 
+    background-color: orange;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  
+  .button_wrap {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 100%;
+  
+  }
+

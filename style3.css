@@ -1,0 +1,124 @@
+.date-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.mainttle {
+  margin : 30px 0px 30px 40px; 
+}
+.button_wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+
+}
+
+.date-month {
+    color: black;
+    font-weight: blod;
+    width: 80%; /* 달력 전체의 너비를 100%로 설정하여 부모 요소에 맞춤 */
+}
+
+.date-month table {
+    width: 80%; /* 테이블 너비를 100%로 설정하여 부모 요소에 맞춤 */
+}
+
+.date-month th,
+.date-month td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 5px;
+    width: calc(100% / 7); /* 각 셀의 너비를 동일하게 설정 */
+    height: 50px; /* 각 셀의 높이를 설정 */
+    box-sizing: border-box; /* 박스 모델로 크기 설정 */
+    border-radius: 0; /* 모서리를 둥글지 않게 설정 */
+}
+
+#month-this {
+    font-size: 24px; /* 텍스트 크기 조정 */
+    margin: 20px 80px; /* 월 표시의 위아래 여백 조정 */
+    
+  }
+  .sun {
+    color: red !important; /* 일요일 텍스트 색상을 빨간색으로 지정 */
+}
+
+.sat {
+    color: blue !important; /* 토요일 텍스트 색상을 파란색으로 지정 */
+}
+  .selected {
+    position: relative;
+    /* 다른 스타일링은 그대로 유지하고, 배경색을 추가합니다. */
+    color: #d12323; /* 체크 표시 배경색 */
+  }
+
+  .selected::before {
+    content: '\2713'; /* 체크 모양 아이콘 (유니코드로 체크 아이콘 표현) */
+    font-size: 28px; /* 아이콘 크기 조절 */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #tbl-month {
+    width: 700px;  /* 달력의 너비 설정 */
+    height: 400px;  /* 달력의 높이 설정 */
+
+  }
+
+  /* #month-this {
+    margin-left: 450px;  
+  } */
+
+  /* #month-prev {
+
+  }
+  
+  #month-next {
+
+  } */
+  .delivery-info {
+    margin-bottom: 5px; /* 주소와 상세주소 간격 조정 */
+    margin-top : 20px;
+    margin-left : 50px;
+}
+
+.disabled-date {
+    background-color: #ccc; /* 원하는 회색 코드로 변경하세요 */
+}
+
+#deliveryTitle {
+    padding: 50px;
+    margin-right: 200px;  
+  }
+
+#address, #detail-address {
+    
+    width: 300px; 
+    height: 20px; 
+    right: 200px;
+}
+
+
+#orderButton {
+    position: absolute;
+    width: 130px;  
+    height: 40px;
+    bottom: 50px;  
+    right: 300px; 
+    background-color: orange;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 10px;
+  }
+  #title {
+    right: 4000px; 
+  }
+  
+  
